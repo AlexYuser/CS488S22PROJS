@@ -1,0 +1,1 @@
+The HTTP package wireshark captured is a persistant connection type because the connection type of the HTTP is 1.1.
