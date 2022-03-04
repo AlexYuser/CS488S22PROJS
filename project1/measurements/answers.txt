@@ -1,6 +1,6 @@
 q2 
 
-If h1 wants to commmunicate with h4, I expect the latency to be around 178ms and the throughput to be around around 20mbits/second. 
+If h1 wants to commmunicate with h4, I expect the latency to be around 170ms and the throughput to be around around 20mbits/second. 
 
 The actual measured RTT/latency was 166ms which is really close to what I expected, I added up the RTT/latency of L1,2,3 because to communicate with from h1 to h4 you need to go through those and latency is measured by adding up the all latencies.
 
