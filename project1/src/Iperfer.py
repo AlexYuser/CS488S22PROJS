@@ -10,7 +10,7 @@ serverHost=str(sys.argv[1])
 
 serverPort=int(sys.argv[2]) 
 
-imputTime=int(sys.argv[3]) 
+imputTime=sys.argv[3] 
 
 if((serverPort < 1024) or (serverPort > 65535)): 
     print("Error: port number must be in the range 1024 to 65535")
