@@ -31,6 +31,7 @@ while imputTime - time.clock() > 0:
     counter+=1
     continue
 
-print("sent=", counter, "KB rate=", counter*8.0/10000.0, "Mbps")
+print("sent=", counter, "K")
+print("rate=", counter*8.0/10000.0, "Mbps")
 
 clientSocket.close()
