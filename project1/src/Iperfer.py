@@ -28,11 +28,11 @@ counter=0
 
 timer=time.perf_counter()
 
-while imputTime - timer > 0:
+while imputTime - timer != 0:
     clientSocket.send(dataSent)
     counter+=1
     continue
 
-print("sent=", counter, " KB rate=", counter*8.0/10000.0, " Mbps")
+print("sent=", counter, "KB rate=", counter*8.0/10000.0, "Mbps")
 
 clientSocket.close()
