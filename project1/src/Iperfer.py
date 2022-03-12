@@ -28,7 +28,7 @@ counter=0
 
 timer=time.perf_counter()
 
-while timer - time.imputTime() < imputTime:
+while timer - time.perf_counter() < imputTime:
     clientSocket.send(dataSent)
     counter+=1
     continue
