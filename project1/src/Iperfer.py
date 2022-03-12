@@ -10,7 +10,7 @@ serverHost=str(sys.argv[1])
 
 serverPort=int(sys.argv[2]) 
 
-time=int(sys.argv[3]) 
+imputTime=int(sys.argv[3]) 
 
 if((serverPort < 1024) or (serverPort > 65535)): 
     print("Error: port number must be in the range 1024 to 65535")
@@ -26,9 +26,9 @@ dataSent=bytearray(1000)
 
 counter=0
 
-timer=time.perf_counter()
+timer=inputTime.perf_counter()
 
-while timer - time.perf_counter() < time:
+while timer - imputTime.perf_counter() < imputTime:
     clientSocket.send(dataSent)
     counter+=1
     continue
