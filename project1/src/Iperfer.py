@@ -26,9 +26,9 @@ dataSent=bytearray(1000)
 
 counter=0
 
-timer=time.perf_counter()
+timer=time.perf_counter(imputTime)
 
-while imputTime - time.perf_counter() < imputTime:
+while imputTime - timer < imputTime:
     clientSocket.send(dataSent)
     counter+=1
     continue
